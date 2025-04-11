@@ -1,0 +1,32 @@
+body {
+    background-color: #F9ECC9;
+    color: #493E3C    
+}
+
+.responsive-gif {
+    width: 100%;  /* Makes it responsive */
+    max-width: 300px; /* Prevents it from becoming too large */
+    height: auto;  /* Keeps the aspect ratio */
+    display: block; /* Removes any extra spacing issues */
+    margin: 0 auto; /* Centers the GIF */
+    border-radius: 20px; /* Optional: Adds rounded corners like an iPhone */
+}
+
+.app-icon {
+    width: 100%;
+    height: auto;
+    border-radius: 22%;
+    max-width: 100px; /* default for small screens */
+}
+
+@media (min-width: 768px) {
+    .app-icon {
+        max-width: 175px; /* medium screens and up */
+    }
+}
+
+@media (min-width: 1024px) {
+    .app-icon {
+        max-width: 250px; /* larger screens */
+    }
+}
